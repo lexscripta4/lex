@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: my-app  # Nama aplikasi Anda
+    region: us-west1  # Lokasi server, sesuaikan jika perlu
+    env: python  # Tipe environment, sesuaikan jika bukan Python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"  # Ganti `app.py` dengan titik masuk aplikasi Anda
